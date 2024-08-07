@@ -2,7 +2,7 @@ const express = require('express');
 const WebSocket = require('ws');
 
 const app = express();
-const wss = new WebSocket.Server({ port: 3000 });
+const wss = new WebSocket.Server({ port: 8080 });
 
 wss.on('connection', (ws) => {
 console.log('A new client connected.');
